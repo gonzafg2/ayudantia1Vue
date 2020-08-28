@@ -7,7 +7,12 @@
 
 <script>
 export default {
-  name: "natalia",
+    name: 'natalia',
+    data() {
+        return {
+            message: 'holi',
+        };
+    },
 };
 </script>
 
