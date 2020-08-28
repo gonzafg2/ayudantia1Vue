@@ -5,6 +5,8 @@
 <script>
 import Vivi from './Viviana'
 
+
+import natalia from "./components/natalia"
 export default {
   name: "Footer",{
     components{
