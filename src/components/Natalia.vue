@@ -1,21 +1,18 @@
 <template>
   <div class="contenido">
-      <div id="natalia">
-          {{message}}
-      </div>
+    <div id="natalia">
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-    name: "natalia",
-    components: { holi },
-}
+  name: "natalia",
+};
 </script>
 
 <style scoped>
 #natalia {
-    background-color: blue;
+  background-color: blue;
 }
-
 </style>

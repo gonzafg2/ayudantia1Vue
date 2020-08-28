@@ -2,8 +2,27 @@
   <div class="footer">
     <h2>Directivas de Vue</h2>
     <div class="frutas">
-      <input type="text" />
+      <!-- Directivas son atributossssss!!!!!!! -->
+      <input v-model="fruta" type="text" />
+      <!-- Actualiza en tiempo real el valor de un estado (variable) -->
       <button class="frutas__btn">Agregar fruta</button>
+      <!-- Interpolación de variables -->
+      {{ fruta }}
+
+      <!-- V-FOR -->
+      <!-- Deben llevar un identificatorio único, como se lo paso? con el atributo :key="index" e index es el índice de cada elemento
+      dentro del arreglo -->
+      <section class="lista">
+        <p v-for="(item, indice) in frutas" :key="indice">
+          {{ item }}
+        </p>
+      </section>
+
+      <!-- V-IF -->
+      <!-- V-ELSE-IF -->
+      <!-- V-ELSE -->
+      <!-- V-SHOW -->
+      <!-- V-ON:CLICK -->
       <Vivi />
       <Naty />
       <Dani />
@@ -21,7 +40,7 @@ export default {
   name: "Footer",
   data() {
     return {
-      frutas: [],
+      frutas: ["Manzana", "Limón", "Pera"],
       fruta: ""
     }
   },
@@ -43,6 +62,8 @@ export default {
       background-color: #fff;
       border: 1px solid #000;
       margin-left: 10px;
+      padding: 5px;
+      border-radius: 5px;
     }
   }
 }
