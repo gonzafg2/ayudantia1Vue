@@ -1,6 +1,7 @@
 <!-- SIEMPRE DEBE IR CÓDIGO HTML DENTRO DE TEMPLATE!!!!! -->
 <template>
   <div id="app">
+    <!-- /¿Hollasdlalsdlasdlasd -->
     <!-- 3° Paso: Invocarlo!!!! Cómo? A través de una etiqueta HTML -->
     <NavBar></NavBar>
     <Footer />
@@ -8,7 +9,7 @@
 
 
 
-  
+
   <!-- TEMPLATE SÓLO ACEPTA UNA ETIQUETA!!! -->
   <!-- <div class="dos"></div>  -->
 </template>
