@@ -8,9 +8,13 @@
 
 <script>
 export default {
-    name: "natalia",
-    components: { holi },
-}
+    name: 'natalia',
+    data() {
+        return {
+            message: 'holi',
+        };
+    },
+};
 </script>
 
 <style scoped>
