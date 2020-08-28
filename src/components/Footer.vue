@@ -4,6 +4,9 @@
     <div class="frutas">
       <input type="text" />
       <button class="frutas__btn">Agregar fruta</button>
+      <Vivi />
+      <Naty />
+      <Dani />
     </div>
   </div>
 
@@ -11,9 +14,9 @@
 
 <script>
 import Vivi from './Viviana'
+import Naty from './Natalia'
+import Dani from './dani'
 
-
-import natalia from "./components/natalia"
 export default {
   name: "Footer",
   data() {
@@ -23,7 +26,9 @@ export default {
     }
   },
   components: {
-    Vivi
+    Vivi,
+    Naty,
+    Dani
   }
 }
 </script>
