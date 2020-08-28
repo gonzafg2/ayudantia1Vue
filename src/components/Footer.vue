@@ -3,8 +3,14 @@
 </template>
 
 <script>
+import Vivi from './Viviana'
+
 export default {
-  name: "Footer"
+  name: "Footer",{
+    components{
+      Vivi
+    }
+  }
 }
 </script>
 
