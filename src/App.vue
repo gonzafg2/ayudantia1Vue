@@ -1,28 +1,49 @@
+<!-- SIEMPRE DEBE IR CÓDIGO HTML DENTRO DE TEMPLATE!!!!! -->
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- 3° Paso: Invocarlo!!!! Cómo? A través de una etiqueta HTML -->
+    <NavBar></NavBar>
+    <Footer />
   </div>
+  <!-- TEMPLATE SÓLO ACEPTA UNA ETIQUETA!!! -->
+  <!-- <div class="dos"></div>  -->
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// 1° Paso: Importar componente!!!
+import NavBar from "./components/Navbar"
+import Footer from "./components/Footer"
 
 export default {
   name: 'App',
+  // 2° Paso: Incluirlo dentro de la propiedad "components".
   components: {
-    HelloWorld
+    NavBar,
+    Footer
   }
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+// Existen dos sintaxis de sass:
+
+// 1° Extension .sass
+// .miClase
+//   color: red
+
+// 2° Extension .scss
+// Completamente compatible con css!!!
+.miClase {
+  color: red
+}
+
+</style>
+
+<style scoped>
+/* Se pueden agregar más de una etiqueta style */
+
+/* La palabra reservada "scoped" sirve para SÓLO aplicar estilos a este componente !!! */
+.miClase2 {
+  color: black;
 }
 </style>
