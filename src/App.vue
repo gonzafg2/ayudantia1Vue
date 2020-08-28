@@ -5,6 +5,10 @@
     <NavBar></NavBar>
     <Footer />
   </div>
+
+
+
+  
   <!-- TEMPLATE SÓLO ACEPTA UNA ETIQUETA!!! -->
   <!-- <div class="dos"></div>  -->
 </template>
